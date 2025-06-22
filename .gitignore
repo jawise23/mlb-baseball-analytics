@@ -1,0 +1,58 @@
+# -----------------------------
+# DATA FILES (Don't version raw/bronze/silver/gold)
+# -----------------------------
+data/
+*.csv
+*.json
+*.parquet
+*.delta
+*.zip
+*.gz
+dbfs/
+mnt/
+
+# Allow empty data folders
+!data/.gitkeep
+
+# -----------------------------
+# PYTHON & BYTECODE
+# -----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.eggs/
+
+# -----------------------------
+# ENVIRONMENT FILES
+# -----------------------------
+.env
+.env.*
+
+# -----------------------------
+# IDEs / EDITORS
+# -----------------------------
+.vscode/
+.idea/
+.DS_Store
+
+# -----------------------------
+# JUPYTER / DATABRICKS
+# -----------------------------
+.ipynb_checkpoints/
+*.dbc
+*.dbc/
+*.rkt/
+*.rkt-checkpoint/
+notebooks/.ipynb_checkpoints/
+databricks-results/
+
+# -----------------------------
+# LOGS / TEMP FILES
+# -----------------------------
+logs/
+*.log
+*.bak
+*.tmp
+*.swp
+*.swo
